@@ -43,11 +43,14 @@ if uploaded_files:
 
         # Determine crowd level
         if person_count < 5:
-            level = "Chini"; color = (0, 255, 0)
+            level = "Chini"
+            color = (0, 255, 0)
         elif person_count < 15:
-            level = "Wastani"; color = (0, 255, 255)
+            level = "Wastani"
+            color = (0, 255, 255)
         else:
-            level = "Kubwa"; color = (0, 0, 255)
+            level = "Kubwa"
+            color = (0, 0, 255)
 
         # Overlay count on image
         cv2.putText(frame, f"Watu: {person_count}", (10, 30),
