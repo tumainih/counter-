@@ -36,7 +36,7 @@ if uploaded_files:
         image_np = np.array(image)
         frame = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
 
-        # Run detection
+        # Run YOLO detection
         results = model(frame)
         boxes = results[0].boxes
 
