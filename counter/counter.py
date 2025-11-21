@@ -24,7 +24,9 @@ model = load_model()
 # Image uploader (multiple files)
 # -----------------------------
 uploaded_files = st.file_uploader(
-    "📁 Chagua picha (can select multiple)", type=["jpg", "jpeg", "png"], accept_multiple_files=True
+    "📁 Chagua picha (can select multiple)",
+    type=["jpg", "jpeg", "png"],
+    accept_multiple_files=True
 )
 
 if uploaded_files:
